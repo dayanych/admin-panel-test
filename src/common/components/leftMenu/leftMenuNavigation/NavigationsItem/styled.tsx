@@ -24,13 +24,13 @@ const StyledNavLink = styled(NavLink)(({ theme }) => ({
     zIndex: -10,
   },
   '&:hover': {
-    color: theme.palette.grey[500],
+    color: theme.palette.grey[600],
   },
   '&:hover::before': {
     opacity: 1,
   },
   '&.active': {
-    color: theme.palette.grey[500],
+    color: theme.palette.grey[600],
   },
 }));
 

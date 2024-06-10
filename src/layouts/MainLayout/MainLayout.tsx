@@ -1,16 +1,15 @@
-import { useMediaQuery, useTheme } from '@mui/material';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { StyledSection, StyledLeftBox, StyledDrawer, StyledRightBox, StyledMain } from './styled';
 import { Header } from '../../common/components/Header';
-import { LeftMenu } from '../../common/components/leftMenu';
+import { LeftMenu } from '../../common/components/LeftMenu';
+import { useMediaMd } from '../../common/hooks/useMediaMd';
 import { MainPage } from '../../pages/MainPage';
 
 export const MainLayout = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up('lg'));
+  const matches = useMediaMd();
 
   const toggleDrawer = (shouldOpen: boolean) => () => {
     setIsDrawerOpen(shouldOpen);

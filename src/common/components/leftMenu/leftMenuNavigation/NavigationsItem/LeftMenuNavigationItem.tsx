@@ -1,7 +1,8 @@
-import { Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Typography, useTheme } from '@mui/material';
 import React from 'react';
 
 import { StyledNavLink } from './styled';
+import { useMediaMd } from '../../../../hooks/useMediaMd';
 
 type NavProps = {
   anchorText: string;
@@ -12,7 +13,7 @@ type NavProps = {
 export const LeftMenuNavigationItem = ({ ...props }: NavProps) => {
   const { anchorText, href, icon } = props;
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up('lg'));
+  const matches = useMediaMd();
 
   return (
     <div className="relative">

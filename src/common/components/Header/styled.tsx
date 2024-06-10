@@ -11,7 +11,7 @@ const StyledMenuBtn = styled(LuMenu)(({ theme }) => ({
   width: '2.4rem',
   height: '2.4rem',
   cursor: 'pointer',
-  [theme.breakpoints.up('lg')]: {
+  [theme.breakpoints.up('md')]: {
     display: 'none',
   },
 }));

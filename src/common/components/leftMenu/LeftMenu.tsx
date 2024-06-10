@@ -1,4 +1,4 @@
-import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { FC } from 'react';
 
 import { NavLink } from 'react-router-dom';
@@ -12,10 +12,10 @@ import {
   StyledNav,
   StyledSection,
 } from './styled';
+import { useMediaMd } from '../../hooks/useMediaMd';
 
 export const LeftMenu: FC = () => {
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up('lg'));
+  const matches = useMediaMd();
 
   return (
     <StyledSection>

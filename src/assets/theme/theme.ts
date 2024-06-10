@@ -3,15 +3,15 @@ import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      light: '#c1c1cb',
-      main: '#9494a0',
-      dark: '#424f5e',
+      light: '#2cda7f',
+      main: '#32c076',
+      dark: '#2db26c',
       contrastText: '#fff',
     },
     secondary: {
-      light: '#2cda7f',
-      main: '#32c076',
-      dark: '#28985d',
+      light: '#ebebf0',
+      main: '#9494a0',
+      dark: '#424f5e',
       contrastText: '#fff',
     },
     success: {
@@ -66,42 +66,135 @@ const theme = createTheme({
     fontFamily: '"Open Sans", sans-serif',
     fontWeightMedium: 600,
     h1: {
-      fontSize: '4rem',
-      fontWeight: 700,
-      color: '#424f5e',
-    },
-    h2: {
       fontSize: '3.2rem',
       fontWeight: 700,
       color: '#424f5e',
+      xs: {
+        fontSize: '3.2rem',
+      },
+      md: {
+        fontSize: '3.2rem',
+      },
+      lg: {
+        fontSize: '3.2rem',
+      },
+    },
+    h2: {
+      fontSize: '2.6rem',
+      fontWeight: 700,
+      color: '#424f5e',
+      xs: {
+        fontSize: '2.6rem',
+      },
+      md: {
+        fontSize: '2.6rem',
+      },
+      lg: {
+        fontSize: '2.6rem',
+      },
     },
     h3: {
       fontSize: '2rem',
       fontWeight: 700,
       color: '#424f5e',
+      xs: {
+        fontSize: '2rem',
+      },
+      md: {
+        fontSize: '2rem',
+      },
+      lg: {
+        fontSize: '2rem',
+      },
     },
     h4: {
       fontSize: '1.8rem',
       fontWeight: 700,
       color: '#424f5e',
+      xs: {
+        fontSize: '1.8rem',
+      },
+      md: {
+        fontSize: '1.8rem',
+      },
+      lg: {
+        fontSize: '1.8rem',
+      },
     },
     body1: {
       fontSize: '1.6rem',
       color: '#9494a0',
+      xs: {
+        fontSize: '1.6rem',
+      },
+      md: {
+        fontSize: '1.6rem',
+      },
+      lg: {
+        fontSize: '1.6rem',
+      },
     },
     body2: {
       fontSize: '1.4rem',
+      xs: {
+        fontSize: '1.4rem',
+      },
+      md: {
+        fontSize: '1.4rem',
+      },
+      lg: {
+        fontSize: '1.4rem',
+      },
     },
     button: {
       fontSize: '1.6rem',
+      xs: {
+        fontSize: '1.6rem',
+      },
+      md: {
+        fontSize: '1.6rem',
+      },
+      lg: {
+        fontSize: '1.6rem',
+      },
     },
   },
   components: {
-    MuiCard: {
+    MuiPaper: {
       styleOverrides: {
         root: {
-          borderRadius: '2.4rem',
           boxShadow: 'none',
+          backgroundColor: 'transparent',
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          boxShadow: 'none',
+          textTransform: 'none',
+          letterSpacing: '0.5px',
+          '&:hover': {
+            boxShadow: 'none',
+          },
+        },
+      },
+    },
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          maxHeight: 36,
+          borderRadius: 16,
+        },
+      },
+    },
+    MuiCheckbox: {
+      styleOverrides: {
+        root: {
+          borderRadius: 8,
+          '&.Mui-checked': {
+            color: '#5856d6',
+          },
         },
       },
     },

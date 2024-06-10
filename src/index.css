@@ -7,9 +7,9 @@ html {
 }
 
 body {
+  box-sizing: border-box;
   margin: 0;
   font-size: 1.6rem;
-  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

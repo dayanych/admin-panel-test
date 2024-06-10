@@ -80,7 +80,8 @@ module.exports = {
       }
     ],
     'react/jsx-props-no-spreading': 'off',
-    'quotes': ['error', 'single']
+    'quotes': ['error', 'single'],
+    "no-param-reassign": 0
   },
   'settings': {
     'import/parsers': {
