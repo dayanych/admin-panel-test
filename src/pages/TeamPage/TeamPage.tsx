@@ -1,4 +1,4 @@
-import { Box, Button, InputAdornment, TextField } from '@mui/material';
+import { Box, InputAdornment, TextField } from '@mui/material';
 import { IoIosSearch } from 'react-icons/io';
 
 import { StyledButton, StyledFunctionalWrapper, StyledTitleWrapper } from './styled';

@@ -1,4 +1,4 @@
-import { Button, ListItemText, Select, Typography } from '@mui/material';
+import { ListItemText, Select, Typography } from '@mui/material';
 import { FC } from 'react';
 
 import { IoIosArrowDown, IoMdClose } from 'react-icons/io';
